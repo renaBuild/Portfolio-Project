@@ -1,19 +1,16 @@
-/* --- Global Styles & Dark Theme Base --- */
 body {
-    background-color: #0b071e; /* Deep space dark base */
+    background-color: #0b071e; 
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     overflow-x: hidden;
     position: relative;
 }
 
-/* --- Atmospheric Neon Ambient Glow Blobs --- */
 .glow-bg-1 {
     position: fixed;
     width: 600px;
     height: 600px;
     top: -10%;
     right: -10%;
-    /* Changed to a vibrant neon blue */
     background: radial-gradient(circle, rgba(0, 119, 255, 0.4) 0%, rgba(0,0,0,0) 70%);
     z-index: 0;
     pointer-events: none;
@@ -25,25 +22,20 @@ body {
     height: 700px;
     bottom: -15%;
     left: -10%;
-    /* Changed to a soft, bright light blue */
     background: radial-gradient(circle, rgba(0, 204, 255, 0.25) 0%, rgba(0,0,0,0) 70%);
     z-index: 0;
     pointer-events: none;
 }
 
-/* --- Core Glassmorphism Layout Container --- */
 .glass-wrapper {
-    /* Changed to a translucent deep blue-gray gradient */
     background: linear-gradient(135deg, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.4) 100%);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
-    /* Tinted the border slightly blue to catch the edge highlight */
     border: 1px solid rgba(56, 189, 248, 0.15);
     border-radius: 28px;
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
 }
 
-/* --- Top Navigation Styles --- */
 .navbar-nav .nav-link {
     transition: all 0.3s ease;
 }
@@ -58,7 +50,6 @@ body {
     padding-bottom: 2px;
 }
 
-/* --- Glowing Download CV Button --- */
 .btn-cv {
     background-color: #ffffff;
     color: #0b071e !important;
@@ -73,7 +64,6 @@ body {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.4) !important;
 }
 
-/* --- Circular Outlined Social Media Buttons --- */
 .social-icon-btn {
     width: 48px;
     height: 48px;
@@ -92,18 +82,14 @@ body {
     transform: scale(1.08);
 }
 
-/* --- Neon Glowing Profile Image Frame --- */
 .avatar-glow-ring {
     position: relative;
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    padding: 6px;
-    /* Changed gradient ring from white to a bright cyan/light blue mix */
-    background: linear-gradient(180deg, rgba(0, 204, 255, 0.8) 0%, rgba(0, 119, 255, 0.2) 100%);
-    /* Changed the outer glow to neon blue, and the inner reflection to soft light blue */
-    box-shadow: 0 0 40px rgba(0, 204, 255, 0.6), 
-                inset 0 0 20px rgba(56, 189, 248, 0.3);
+    padding: 5px; 
+    background: linear-gradient(180deg, rgba(0, 204, 255, 0.45) 0%, rgba(0, 119, 255, 0.1) 100%);
+    box-shadow: 0 0 25px rgba(0, 204, 255, 0.25), inset 0 0 12px rgba(56, 189, 248, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,7 +102,6 @@ body {
     border-radius: 50%;
 }
 
-/* --- Inner Glass Experience Project Cards --- */
 .glass-card {
     background: rgba(255, 255, 255, 0.03) !important;
     border: 1px solid rgba(255, 255, 255, 0.06) !important;
@@ -130,7 +115,6 @@ body {
     border-color: rgba(255, 255, 255, 0.15) !important;
 }
 
-/* --- Responsive Layout Breakpoints Fixes --- */
 @media (max-width: 991.98px) {
     .avatar-glow-ring {
         width: 260px;
